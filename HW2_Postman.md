@@ -474,7 +474,7 @@ pm.test("Salary_12", function () {
 ```
 17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)
 ```bash
-let salary18Resp = JsonData.qa_salary_after_1.5_year
+let salary18Resp = JsonData["qa_salary_after_1.5_year"]
 let salary18Req = reqBody.salary*3.3
 pm.test("Salary_18", function () {
     pm.expect(salary18Resp).to.eql(salary18Req);
@@ -482,10 +482,10 @@ pm.test("Salary_18", function () {
 ```
 18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)
 ```bash
-let salary60Resp = JsonData.qa_salary_after_1.5_year
-let salary60Req = reqBody.salary*3.8
-pm.test("Salary_60", function () {
-    pm.expect(salary60Resp).to.eql(salary60Req);
+let salary42Resp = JsonData["qa_salary_after_3.5_year"]
+let salary42Req = reqBody.salary*3.8
+pm.test("Salary_42", function () {
+    pm.expect(salary42Resp).to.eql(salary42Req);
 });
 ```
 19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)
