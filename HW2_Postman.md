@@ -21,7 +21,7 @@ pm.test("BodyString", function () {
 ```
 ## Endpoint_2
 
-**http://162.55.220.72:5005/object_info_3**
+**http://162.55.220.72:5005/user_info_3**
 
 1. Отправить запрос. (POST)
 
@@ -132,6 +132,7 @@ pm.test("Salary_1.5 year", function () {
 **http://162.55.220.72:5005/object_info_3**
 
 1. Отправить запрос. (GET)
+
 ответ:
 > {
     "age": "34",
